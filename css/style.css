@@ -27,14 +27,11 @@
 .route{
     font-size: 12px;
 }
-.home{
-    height: fit-content;
-}
 .home-bg{
     background-image: url(../images/banner.png);
     background-repeat: no-repeat;
     background-position:top;
-    height: fit-content;
+    height: 100%;
 }
 .search{
     padding-block: .625rem;
