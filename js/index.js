@@ -15,10 +15,10 @@ navigator.geolocation.getCurrentPosition(
         getCurrentWeather("cairo");
     }
 );
-async function getCurrentWeather(city = "cairo"){
-   let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=a12872faa0734ee89cd160544252904&q=${city}`)
+async function getCurrentWeather(loctaion = "cairo"){
+   let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=a12872faa0734ee89cd160544252904&q=${loctaion}`)
    let currentWeather = await response.json()
-   let forecastResponse= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=a12872faa0734ee89cd160544252904&q=${city}&days=3`)
+   let forecastResponse= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=a12872faa0734ee89cd160544252904&q=${loctaion}&days=3`)
    let forecast = await forecastResponse.json()
    
    let currentDay= new Date()
