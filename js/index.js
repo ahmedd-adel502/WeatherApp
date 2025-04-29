@@ -20,6 +20,7 @@ async function getCurrentWeather(loctaion = "cairo"){
    let currentWeather = await response.json()
    let forecastResponse= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=a12872faa0734ee89cd160544252904&q=${loctaion}&days=3`)
    let forecast = await forecastResponse.json()
+   console.log(forecast);
    
    let currentDay= new Date()
      let nextDay = new Date(currentDay)
