@@ -7,7 +7,14 @@ let mailInput=document.querySelector("#mailInput")
 //^ Variables
 
 //& Functions
-
+navigator.geolocation.getCurrentPosition(
+    function (position) {
+        getCurrentWeather(`${position.coords.latitude},${position.coords.longitude}`);
+    },
+    function () {
+        getCurrentWeather("cairo");
+    }
+);
 async function getCurrentWeather(city = "cairo"){
    let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=a12872faa0734ee89cd160544252904&q=${city}`)
    let currentWeather = await response.json()
@@ -68,7 +75,6 @@ async function getCurrentWeather(city = "cairo"){
                             </div>
                             `
 }
-getCurrentWeather()
 
 //! searchRegex
 let searchRegex=/^[A-Za-z]{3,}\s*([A-Za-z]{3,})?$/
