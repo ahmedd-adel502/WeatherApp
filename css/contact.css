@@ -1,5 +1,6 @@
 main{
     background-color: #222530;
+    min-height: 85vh;
 }
 .navbar{
     min-height: 100px;
