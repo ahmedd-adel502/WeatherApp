@@ -16,9 +16,9 @@ navigator.geolocation.getCurrentPosition(
     }
 );
 async function getCurrentWeather(loctaion = "cairo"){
-   let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=a12872faa0734ee89cd160544252904&q=${loctaion}`)
+   let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=a12872faa0734ee89cd160544252904&q=${loctaion}`)
    let currentWeather = await response.json()
-   let forecastResponse= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=a12872faa0734ee89cd160544252904&q=${loctaion}&days=3`)
+   let forecastResponse= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=a12872faa0734ee89cd160544252904&q=${loctaion}&days=3`)
    let forecast = await forecastResponse.json()
    
    let currentDay= new Date()
@@ -81,7 +81,7 @@ let searchRegex=/^[A-Za-z]{3,}\s*([A-Za-z]{3,})?$/
 async function searchCities(){
     let searchValue=locationInput.value.toLowerCase()
     if(searchRegex.test(searchValue)){
-        let result = await fetch (`http://api.weatherapi.com/v1/search.json?key=a12872faa0734ee89cd160544252904&q=${searchValue}`)
+        let result = await fetch (`https://api.weatherapi.com/v1/search.json?key=a12872faa0734ee89cd160544252904&q=${searchValue}`)
         let resultData= await result.json()
         getCurrentWeather(resultData[0].name);
     }
