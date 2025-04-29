@@ -1,0 +1,94 @@
+main{
+    background-color: #222530;
+}
+.navbar{
+    min-height: 100px;
+    background-color: #222530;
+}
+.nav-item{
+    color: #fff;
+    border: 2px solid transparent;
+    transition: all 0.4s;
+}
+.nav-item:hover{
+    border-color: #009AD8;
+    transition: all 0.4s;
+}
+.nav-link{
+    transition: all 0.4s;
+    color: #fff;
+}
+.nav-item:hover .nav-link{
+    color: #009AD8;
+    transition: all 0.4s;
+}
+.nav-item.active-m{
+    border: 2px solid #009AD8;
+}
+.weather{
+    font-size: 20px;
+}
+.route{
+    font-size: 12px;
+}
+
+.links{
+    background-color: #262936;
+    padding-inline: 1.5625rem;
+    padding-block: .9375rem;
+    border-radius: 25px;
+}
+.inputs-section input{
+    border-radius: 25px;
+    padding-inline: .9375rem;
+}
+textarea{
+    max-height: 150px;
+    background-color: #222530;
+}
+footer{
+    background-color: #262936;
+}
+footer ul li a {
+    width: 35px;
+    height: 35px;
+    background-color: #000;
+    transition: all 0.4s;
+}
+.subscribe{
+    right: 0;
+    border-radius: none;
+}
+footer ul li a i{
+    vertical-align: middle;
+}
+.footer-list li a:hover {
+    color: #fff;
+    background-color: #009AD8;
+    transition: all 0.4s;
+}
+.copy{
+    margin-top: 20px;
+    font-size: 14px;
+    color:#8E8F94;
+    margin-bottom: 0;
+}
+/* ========== Responsive Styles ========== */
+
+/* Small devices */
+@media (max-width: 575.98px) {
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .contact-form {
+        padding: 1.5rem;
+    }
+}

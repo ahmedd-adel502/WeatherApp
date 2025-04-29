@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand d-flex flex-grow-0" href="index.html"><span class="img-container d-flex align-items-center"><img class="w-100" src="images/logo.png" alt="Logo"></span><span class="ms-2 d-flex flex-column"><span class="weather">Weather</span><span class="route">Route Academy</span></span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item rounded-4 mx-3 active-m">
+                    <a class="nav-link py-2 px-3 active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item rounded-4 mx-3">
+                    <a class="nav-link py-2 px-3" href="#">News</a>
+                  </li>
+                  <li class="nav-item rounded-4 mx-3">
+                    <a class="nav-link py-2 px-3" href="#">Live Cameras</a>
+                  </li>
+                  <li class="nav-item rounded-4 mx-3">
+                    <a class="nav-link py-2 px-3" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item rounded-4 mx-3">
+                    <a class="nav-link py-2 px-3" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="home min-vh-75">
+            <div class="home-bg">
+                <div class="container">
+                    <div class="home-content pt-5">
+                        <form>
+                            <div class="input-group">
+                                <input id="locationInput" type="text" class="search form-control" placeholder="Type your location">
+                            </div>
+                        </form>
+                        <div id="htmlContainer" class="row g-0 my-5">
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pt-4 mt-4">
+        <div class="container">
+            <div class="footer-content d-flex justify-content-between align-items-center">
+                    <div class="input-group w-50 position-relative footer-input align-items-center">
+                        <input id="mailInput" class="form-control w-50" type="email" placeholder="Enter your email to subscribe...">
+                        <button id="mailBtn" type="button" class="subscribe btn btn-primary position-absolute">Subscribe</button>
+                    </div>
+                    <ul class="footer-list list-unstyled p-0 d-flex justify-content-around align-items-center m-0">
+                        <li class="mx-2"><a class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none" href="https://www.facebook.com/ahmedadell502" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="mx-2"><a class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none" href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="mx-2"><a class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none" href="https://www.google.com" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li class="mx-2"><a class="rounded-circle d-flex justify-content-center align-items-center text-decoration-none" href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    </ul>
+            </div>
+            <p class="copy">&copy;Copyright 2025 Route Academy. Designed By <strong class="text-white"><a class="text-decoration-none text-white" href="https://www.facebook.com/ahmedadell502" target="_blank">Ahmed Adel</a></strong>. All Rights reserved</p>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
