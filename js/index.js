@@ -41,9 +41,9 @@ async function getCurrentWeather(loctaion = "cairo"){
                                         <span class="d-block" id="currentTemp">${currentWeather.current.temp_c}<sup>o</sup>c</span>
                                         <img id="currentTempImg" src="https:${currentWeather.current.condition.icon}" alt="${currentWeather.current.condition.text}">
                                         <ul class="list-unstyled d-flex justify-content-around" id="currentDayInfo">
-                                            <li><i class="fa fa-umbrella"></i> 20%</li>
-                                            <li><i class="fa fa-wind"></i> 18Km/h</li>
-                                            <li><i class="fa fa-compass"></i> East</li>
+                                            <li><i class="fa fa-umbrella"></i> ${currentWeather.current.humidity}%</li>
+                                            <li><i class="fa fa-wind"></i> ${currentWeather.current.wind_kph} Km/h</li>
+                                            <li><i class="fa fa-compass"></i> ${currentWeather.current.wind_dir}</li>
                                         </ul>
                                     </div>
                                 </div>
