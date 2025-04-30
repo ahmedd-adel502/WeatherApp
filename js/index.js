@@ -57,7 +57,7 @@ async function getCurrentWeather(loctaion = "cairo"){
                                         <img id="nextDayImg" src="https:${forecast.forecast.forecastday[1].day.condition.icon}" alt="sunny">
                                         <span class="d-block" id="nextDayGreatTemp">${forecast.forecast.forecastday[1].day.maxtemp_c}<sup>o</sup>c</span>
                                         <span class="d-block" id="nextDaySmallTemp">${forecast.forecast.forecastday[1].day.mintemp_c}<sup>o</sup></span>
-                                        <span class="text-primary-emphasis text-capitalize" id="tempDesc">${forecast.forecast.forecastday[1].day.condition.text}</span>
+                                        <span class="text-warning fw-bold text-capitalize" id="tempDesc">${forecast.forecast.forecastday[1].day.condition.text}</span>
                                     </div>
                                 </div>
                             </div>
@@ -70,7 +70,7 @@ async function getCurrentWeather(loctaion = "cairo"){
                                         <img id="dayAfterNextImg" src="https:${forecast.forecast.forecastday[2].day.condition.icon}" alt="sunny">
                                         <span class="d-block" id="dayAfterNextTemp">${forecast.forecast.forecastday[2].day.maxtemp_c}<sup>o</sup>c</span>
                                         <span class="d-block" id="dayAfterNextSmallTemp">${forecast.forecast.forecastday[2].day.mintemp_c}<sup>o</sup></span>
-                                        <span class="text-primary-emphasis text-capitalize" id="dayAfterNextTempDesc">${forecast.forecast.forecastday[2].day.condition.text}</span>
+                                        <span class="text-warning fw-bold text-capitalize" id="dayAfterNextTempDesc">${forecast.forecast.forecastday[2].day.condition.text}</span>
                                     </div>
                                 </div>
                             </div>
